@@ -15,4 +15,3 @@ This project was intended to showcase an example Android project that is divided
 - Product module
     - Product catalog
     - Product details
-    - Product favorites
