@@ -1,0 +1,11 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
+    package="id.rakawm.modular_example.checkout">
+
+    <application>
+        <activity android:name=".cart.CartActivity" android:theme="@style/CheckoutTheme" />
+        <activity android:name=".add.AddCartActivity" android:theme="@style/CheckoutTheme" />
+        <activity android:name=".payment.PaymentActivity" android:theme="@style/CheckoutTheme" />
+    </application>
+
+</manifest>

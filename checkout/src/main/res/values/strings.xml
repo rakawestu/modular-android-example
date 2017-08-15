@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">checkout</string>
+    <string name="cart_title">Shopping Cart</string>
+    <string name="add_to_cart_title">Add to Cart</string>
+    <string name="total_label">Total Price</string>
+    <string name="default_total">Rp 0</string>
+    <string name="hint_count">Count</string>
+    <string name="button_pay_now">Pay Now</string>
+    <string name="button_add_to_cart">Add to cart</string>
+    <string name="button_redirect_cart">Go to shopping Cart</string>
+    <string name="button_continue_shopping">Continue Shopping</string>
+    <string name="added_cart">Product has been added to cart.</string>
+    <string name="payment_title">Payment</string>
+    <string name="button_payment_complete">Complete Payment</string>
+</resources>

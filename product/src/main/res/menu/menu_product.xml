@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="id.rakawm.modular_example.product.details.ProductDetailsActivity">
+    <item
+        android:id="@+id/action_cart"
+        android:orderInCategory="100"
+        android:title="@string/action_cart"
+        android:icon="@drawable/ic_shopping_cart_white_24px"
+        app:showAsAction="ifRoom" />
+</menu>
