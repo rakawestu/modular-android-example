@@ -1,5 +1,6 @@
 package id.rakawm.modular_example.checkout.cart
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
@@ -8,6 +9,7 @@ import android.widget.TextView
 import id.rakawm.modular_example.checkout.ModularCheckout
 import id.rakawm.modular_example.checkout.R
 import id.rakawm.modular_example.checkout.cart.adapter.CartItemAdapter
+import id.rakawm.modular_example.checkout.payment.PaymentActivity
 import id.rakawm.modular_example.utils.ProductUtils
 
 /**
@@ -24,6 +26,7 @@ class CartActivity: AppCompatActivity() {
         totalText = findViewById(R.id.total_price) as TextView
         initContainer()
         initData()
+        initPayNowButton()
     }
 
     private fun initContainer() {
@@ -37,6 +40,12 @@ class CartActivity: AppCompatActivity() {
         val items = ModularCheckout.getInstance().checkoutDataHandler.getCartItems()
         getAdapter()?.setData(items.toMutableList())
         totalText.text = ProductUtils.getFormattedPrice(getAdapter()?.getTotalPrice()?: 0)
+    }
+
+    private fun initPayNowButton() {
+        findViewById(R.id.buy_now_button).setOnClickListener {
+            startActivity(Intent(this, PaymentActivity::class.java))
+        }
     }
 
     private fun getAdapter(): CartItemAdapter? {
